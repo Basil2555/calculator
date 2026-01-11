@@ -2,15 +2,37 @@
   padding: 0;
   margin: 0;
   box-sizing: 0;
+  background-color: black;
+  font-size: 30px;
+
+  font-family: arial;
+  color: white;
+}
+.paragraph1,
+.paragraph4,
+.paragraph2,
+.paragraph3 {
+ margin-top: 30px;
+ margin-left: 20px;
+ width: 30%;
 }
 .main-container {
-  display: flex;
-  flex-direction: column;
+  margin-top: 30px;
+  width: 30%;
+
 }
 .my-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: orange;
 }
-button{
-    padding: 25px;
-    margin: 10px;
+.my-values:nth-child(5) button:nth-child(1) {
+  grid-column: span 2;
 }
-
+button {
+  padding: 25px;
+  margin: 10px;
+  border: none;
+  color: white;
+  border-radius: 60px;
+}

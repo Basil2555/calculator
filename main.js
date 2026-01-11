@@ -1,4 +1,5 @@
 let calculation = "";
+
 function doCalculation(content) {
   calculation = calculation + content;
 }
@@ -35,6 +36,8 @@ accButton.addEventListener("click", () => {
   calculation = "";
   document.querySelector(".paragraph1").innerHTML = "";
   document.querySelector(".paragraph2").innerHTML = "";
+  document.querySelector(".paragraph3").innerHTML = "";
+  document.querySelector(".paragraph4").innerHTML = "";
 });
 const percentBtn = document.querySelector(".js-percent");
 percentBtn.addEventListener("click", () => {
